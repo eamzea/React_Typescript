@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from './components/Counter';
+import CounterHook from './components/CounterHook';
+import CustomForm from './components/CustomForm';
+import Login from './components/Login';
+import Users from './components/Users';
+import BasicTypes from './typescript/BasicTypes';
+import Functions from './typescript/Functions';
+import ObjectLiterals from './typescript/ObjectLiterals';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Intro to TS in React
+      <hr />
+      <BasicTypes />
+      <hr />
+      <ObjectLiterals />
+      <hr />
+      <Functions />
+      <hr />
+      <Counter />
+      <hr />
+      <CounterHook />
+      <hr />
+      <Login />
+      <hr />
+      <Users />
+      <hr />
+      <CustomForm />
     </div>
   );
-}
+};
 
 export default App;
