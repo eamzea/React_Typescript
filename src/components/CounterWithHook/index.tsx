@@ -1,7 +1,8 @@
-import useCounter from '../hooks/useCounter';
+import useCounter from '../../hooks/useCounter';
 
-const CounterHook = () => {
+const CounterWithHook = () => {
   const { counterState, accumulate } = useCounter(5);
+
   return (
     <>
       <h3>
@@ -18,4 +19,4 @@ const CounterHook = () => {
   );
 };
 
-export default CounterHook;
+export default CounterWithHook;

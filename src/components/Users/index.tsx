@@ -1,5 +1,5 @@
-import { useUsers } from '../hooks/useUsers';
-import { User } from '../interfaces/api';
+import { useUsers } from '../../hooks/useUsers';
+import { User } from '../../interfaces/api';
 
 const Users = () => {
   const { users, nextPage, previousPage } = useUsers();
